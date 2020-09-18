@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<dirinfo>
+<files>
+<item key='rat.ai20161212105518' />
+<item key='ox.ai20161212105518' />
+<item key='tiger.ai20161212105518' />
+<item key='rabbit.ai20161212105518' />
+<item key='dragon.ai20161212105518' />
+<item key='snake.ai20161212105518' />
+<item key='horse.ai20161212105518' />
+<item key='goat.ai20161212105518' />
+<item key='monkey.ai20161212105518' />
+<item key='rooster.ai20161212105518' />
+<item key='dog.ai20161212105518' />
+<item key='boar.ai20161212105518' />
+<item key='rat_zi.ai20161214110255' />
+<item key='ox_chou.ai20161214110255' />
+<item key='tiger_yin.ai20161214110255' />
+<item key='rabbit_mao.ai20161214110255' />
+<item key='dragon_chen.ai20161214110255' />
+<item key='snake_si.ai20161214110255' />
+<item key='horse_wu.ai20161214110255' />
+<item key='goat_wei.ai20161214110255' />
+<item key='monkey_shen.ai20161214110254' />
+<item key='rooster_you.ai20161214110254' />
+<item key='dog_xu.ai20161214110254' />
+<item key='boar_hai.ai20161214110254' />
+<item key='tangerine.ai20161212105518' />
+<item key='tangyuan.ai20161214110255' />
+<item key='baozi.ai20161214110255' />
+<item key='plum_flower.ai20161214110255' />
+<item key='fish.ai20161212105518' />
+<item key='yuanbao.ai20161212105518' />
+<item key='red_envelope.ai20161212105518' />
+<item key='lantern.ai20161212105518' />
+<item key='firecracker.ai20161212105518' />
+<item key='knot.ai20161214110255' />
+<item key='lucky_coin.ai20161214110255' />
+<item key='chinese_lion.ai20161214110255' />
+<item key='girl.ai20161214110255' />
+<item key='boy.ai20161214110255' />
+<item key='spring.ai20161212105518' />
+<item key='festival.ai20161212105518' />
+</files>
+</dirinfo>

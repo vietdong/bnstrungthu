@@ -166,7 +166,7 @@
                     </div>
                     <div class="con-md-3 box">
                         <div class="box_img">
-                            <img src="./asset/img/ss2_img5.png">
+                            <img src="./asset/img/ss2_img6.png">
                         </div>
                         <div class="box_title">
                             <p>Hoàn thành phó bản<br> Cung Tuyết Ngọc</p>
@@ -176,7 +176,7 @@
                     </div>
                     <div class="con-md-3 box">
                         <div class="box_img">
-                            <img src="./asset/img/ss2_img5.png">
+                            <img src="./asset/img/ss2_img7.png">
                         </div>
                         <div class="box_title">
                             <p>Hoàn thành phó bản <br>Nhà tù Hắc Long</p>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="con-md-3 box">
                         <div class="box_img">
-                            <img src="./asset/img/ss2_img5.png">
+                            <img src="./asset/img/ss2_img8.png">
                         </div>
                         <div class="box_title">
                             <p>Hoàn thành phó bản<br> Chiến Hạm Câm Lặng</p>
@@ -197,7 +197,7 @@
 
                     <div class="con-md-3 box">
                         <div class="box_img">
-                            <img src="./asset/img/ss2_img5.png">
+                            <img src="./asset/img/ss2_img9.png">
                         </div>
                         <div class="box_title">
                             <p>Hoàn thành phó bản<br> Rừng bóng ma</p>
@@ -207,7 +207,7 @@
                     </div>
                     <div class="con-md-3 box">
                         <div class="box_img">
-                            <img src="./asset/img/ss2_img5.png">
+                            <img src="./asset/img/ss2_img10.png">
                         </div>
                         <div class="box_title">
                             <p>Hoàn thành phó bản<br> Đảo Cuồng Phong</p>
@@ -217,7 +217,7 @@
                     </div>
                     <div class="con-md-3 box">
                         <div class="box_img">
-                            <img src="./asset/img/ss2_img5.png">
+                            <img src="./asset/img/ss2_img11.png">
                         </div>
                         <div class="box_title">
                             <p>Hoàn thành phó bản<br> Vườn Thiên Quy</p>
@@ -227,7 +227,7 @@
                     </div>
                     <div class="con-md-3 box">
                         <div class="box_img">
-                            <img src="./asset/img/ss2_img5.png">
+                            <img src="./asset/img/ss2_img12.png">
                         </div>
                         <div class="box_title">
                             <p>Rương Trung Thu<br> Hồng Môn</p>
@@ -388,14 +388,18 @@
                             
                         </div>
                         <div class="btn_rotate">
-                            <img src="./asset/img/rotateX1.png">
-                            <img src="./asset/img/rotateX10.png">
+                            <img onclick="start()" src="./asset/img/rotateX1.png">
+                            <img data-toggle="modal" data-target="#giftx10" src="./asset/img/rotateX10.png">
+                            <img onclick="stop()" src="./asset/img/stop.png">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <img src="./asset/img/logo.png" width="100%">
+    </footer>
 <div class="menu_right">
     <ul>
         <li><a href=""><img src="./asset/img/dk.png"></a></li>
@@ -404,6 +408,7 @@
         <li><a href=""><img src="./asset/img/Fb.png"></a><a href=""><img src="./asset/img/discord.png"></a></li>
         <li><a href=""><img src="./asset/img/down.png"></a></li>
     </ul>
+    <div class="back-to-top"></div>
 </div>
 <div class="menu_left">
     <ul>
@@ -429,10 +434,33 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="giftx10" tabindex="-1" role="dialog" aria-labelledby="giftx10Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+           <div class="giftx10">
+            <img src="./asset/img/ss5_1.png" />
+            <img src="./asset/img/ss5_2.png" />
+            <img src="./asset/img/ss5_3.png" />
+            <img src="./asset/img/ss5_4.png" />
+            <img src="./asset/img/ss5_5.png" /><br>
+            <img src="./asset/img/ss5_6.png" />
+            <img src="./asset/img/ss5_7.png" />
+            <img src="./asset/img/ss5_8.png" />
+            <img src="./asset/img/ss5_9.png" />
+            <img src="./asset/img/ss5_10.png" />
+           </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
     <audio src="./asset/rolling.mp3" id="audioBg"></audio>
     <audio src="./asset/winaudio.mp3" id="audioWinBg"></audio>
-    <button onclick="start()">Start</button>
-    <button onclick="stop()">Stop</button>
 </body>
 <style>
     .table td, .table th{
@@ -487,7 +515,7 @@
             // console.log(slot, itemname)
     }
     let currentIdx = 1
-    let maxSlot = 12
+    let maxSlot = 13
     let intervalId
     let resultId = 3
 
@@ -601,5 +629,10 @@ $(window).on('mousemove click', function(e) {
 });
 
 moveBackground();
+    $('.back-to-top').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	});
 </script>
+
 </html>

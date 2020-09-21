@@ -5,6 +5,10 @@
     left: 20px;
     z-index: 99;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
 .header{
     position: relative;
 }
@@ -22,7 +26,21 @@
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    z-index: 999999;
+    z-index: 9;
+}
+.play_video,.play_video2,.carousel-indicators,.carousel-caption{
+    z-index: 999;
+}
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.carousel-indicators li.active{
+    background-image: url('./img/net2.png');
+    background-size: 100% 100%;
+    border-radius: 50%;
+    background-color: unset;
 }
 .slide2 .bg{
     background-image: url('./img/bg_slide2.png');
@@ -74,7 +92,9 @@
 }
 .section2 .box{
     text-align: center;
-    
+}
+.section2 .box .box_img img{
+    width: 90%;
 }
 .section2 .box:nth-child(5){
     margin-top: 68px;
@@ -87,6 +107,12 @@
 }
 .section2 .box:nth-child(9){
     margin-top: 6px;
+}
+.section2 .box:nth-child(10){
+    margin-left: -40px;
+}
+.section2 .box:nth-child(11){
+    margin-left: -20px;
 }
 .section2 .box:nth-child(12){
     margin-top: 48px;
@@ -293,7 +319,7 @@ footer{
     padding: 20px;
 }
 footer img{
-    width: 300px;
+    width: 250px;
 }
 .giftx10{
     margin-top: 100px;
@@ -319,4 +345,67 @@ footer img{
     background-size: 100% 100%;
     background-color: unset;
     border: 0;
+}
+#dangki .modal-content,#login .modal-content{
+    background-image: url('./img/bg_dk.png');
+    background-size: 100% 100%;
+    background-color: unset;
+    border: 0;
+    text-align: center;
+    
+}
+#login .modal-content{
+    background-image: url('./img/bg_login.png');
+}
+#dangki .modal-content .form{
+    padding-top: 60px;
+}
+#dangki .modal-content input,#login .modal-content input[type="text"]{
+    height: 50px;
+    border-radius: 20px;
+    border: 3px solid #8b000b;
+    padding-left: 20px;
+    background-color: #ffd26f;
+    margin-bottom: 20px;
+}
+#login .modal-content input[type="text"]{
+    width: 100%;
+    
+}
+#login .modal-content .form{
+    padding: 0 60px;
+}
+#dangki .modal-content button, #login .modal-content button{
+    border: 0;
+    background-color: unset;
+}
+#dangki .modal-content p,#login .modal-content p{
+    color: #ffd26f;
+    padding-top: 10px;
+}
+#login .modal-content p{
+    padding-bottom: 15px;
+}
+#dangki .modal-content a, #login .modal-content a{
+    color: #fff;
+    text-decoration: underline;
+}
+input:focus,button:focus{
+    border: 3px solid #8b000b;
+    box-shadow: unset;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: #8b000b;
+    font-weight: bold;
+}
+.checkbox{
+    text-align: left;
+    padding: 0 60px;
+}
+.checkbox input[type=checkbox]{
+    border: 3px solid #8b000b !important;
+}
+.checkbox span{
+    color: #ffd26f;
 }

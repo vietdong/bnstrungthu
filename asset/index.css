@@ -62,8 +62,23 @@ body{
 .section1 .text{
     margin-top: 10px;
 }
-.section1 .chil_title{
+
+.section1 .chil_title img{
     margin-bottom: 20px;
+    border-bottom: 3px solid #f2d142;
+    padding-left: 20px;
+    position: relative;
+    z-index: 99;
+}
+.section1 .chil_title::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    
 }
 .section1 .left_ss1{
     margin-top: 75px;
@@ -129,6 +144,7 @@ body{
 .section3{
     background-image: url('./img/bg_ss3.png');
     background-size: 100% 100%;
+    text-align: center;
 }
 .section3 .box img:nth-child(1){
     margin-bottom: 20px;
@@ -144,6 +160,34 @@ body{
 }
 .section4{
     background-image: url('./img/bg_ss4.png');
+}
+.section4 .box{
+    width: 137px;
+    height: 158px;
+    margin: auto;
+    background-image: url('./img/ss4_img1.png');
+    position: relative;
+}
+.stop_rotate{
+    display: none;
+}
+.start_rotate:hover,.stop_rotate:hover{
+    cursor: pointer;
+    filter: saturate(3);
+}
+.section4 .box img{
+    width: 43px;
+    height: 42px;
+    margin-top: 58px;
+}
+.section4 .box span{
+    font-weight: 900;
+    color: #fff644;
+    -webkit-text-stroke: 1px #b70b02;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    font-size: 85%;
 }
 .section5{
     background-image: url('./img/bg_ss5.png');
@@ -166,7 +210,7 @@ body{
 }
 .history ul{
     padding-right: 40px;
-    height: 300px;
+    height: 360px;
     overflow: auto;
 }
 .history ul::-webkit-scrollbar {
@@ -198,7 +242,7 @@ body{
     text-align: center;
     padding: 20px 0;
 }
-.account strong,.account span{
+.account strong,.account span a{
     color: #ffce00;
     text-decoration: underline;
 }
@@ -322,12 +366,12 @@ footer img{
     width: 250px;
 }
 .giftx10{
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 .giftx10 img{
     width: 100px;
-    margin: 30px;
+    margin: 20px;
     
 }
 #giftx10 .close{

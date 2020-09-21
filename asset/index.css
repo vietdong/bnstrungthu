@@ -391,8 +391,17 @@ footer img{
         max-width: 1000px !important;
         
     }
+    #exampleModalCenter .modal-dialog {
+        max-width: 800px !important;
+    }
 }
-
+#exampleModalCenter .close{
+    font-size: 60px;
+}
+.modal-content{
+    background-color: unset;
+    border: 0;
+}
 #giftx10 .modal-content{
     background-image: url('./img/giftx10.png');
     background-size: 100% 100%;

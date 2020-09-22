@@ -111,6 +111,17 @@ body{
 .section2 .box .box_img img{
     width: 90%;
 }
+.btn_sl_banh{
+    width: 206px;
+    height: 68px;
+    background-image: url('./img/ss2_bg_banh.png');
+    margin: auto;
+    font-weight: 900;
+    padding: 10px 0 0 50px;
+    color: #eec138;
+    
+}
+
 .section2 .box:nth-child(5){
     margin-top: 68px;
 }
